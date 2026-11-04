@@ -1,6 +1,6 @@
 const $=s=>document.querySelector(s);
 $('#hi').textContent=DATA.greeting;$('#name').textContent=DATA.name;$('#bio').textContent=DATA.bio;$('#cmsg').textContent=DATA.contactMsg;
-$('#foot').textContent='© '+new Date().getFullYear()+' '+DATA.name+' — designed & coded with ♥';
+$('#foot').textContent='© '+new Date().getFullYear()+' '+DATA.name+'';
 $('#stats').innerHTML=DATA.stats.map(s=>`<div class="glass stat"><b data-n="${s.n}" data-s="${s.s}">0</b><small>${s.l}</small></div>`).join('');
 const cats=Object.keys(DATA.skills);
 $('#tabs').innerHTML=cats.map((c,i)=>`<button class="tab${i?'':' on'}" data-c="${c}">${c}</button>`).join('');
